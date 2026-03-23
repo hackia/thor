@@ -63,22 +63,35 @@
           "name": "verb"
         },
         {
-          "type": "SYMBOL",
-          "name": "operand"
-        },
-        {
           "type": "CHOICE",
           "members": [
             {
               "type": "SEQ",
               "members": [
                 {
-                  "type": "STRING",
-                  "value": ","
-                },
-                {
                   "type": "SYMBOL",
                   "name": "operand"
+                },
+                {
+                  "type": "CHOICE",
+                  "members": [
+                    {
+                      "type": "SEQ",
+                      "members": [
+                        {
+                          "type": "STRING",
+                          "value": ","
+                        },
+                        {
+                          "type": "SYMBOL",
+                          "name": "operand"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BLANK"
+                    }
+                  ]
                 }
               ]
             },
@@ -94,18 +107,6 @@
       "members": [
         {
           "type": "STRING",
-          "value": "her_ankh"
-        },
-        {
-          "type": "STRING",
-          "value": "kher"
-        },
-        {
-          "type": "STRING",
-          "value": "kher_ankh"
-        },
-        {
-          "type": "STRING",
           "value": "ankh"
         },
         {
@@ -118,11 +119,7 @@
         },
         {
           "type": "STRING",
-          "value": "jena"
-        },
-        {
-          "type": "STRING",
-          "value": "kheb"
+          "value": "duat"
         },
         {
           "type": "STRING",
@@ -134,11 +131,47 @@
         },
         {
           "type": "STRING",
+          "value": "her"
+        },
+        {
+          "type": "STRING",
+          "value": "her_ankh"
+        },
+        {
+          "type": "STRING",
+          "value": "in"
+        },
+        {
+          "type": "STRING",
+          "value": "isfet"
+        },
+        {
+          "type": "STRING",
+          "value": "jena"
+        },
+        {
+          "type": "STRING",
+          "value": "kheb"
+        },
+        {
+          "type": "STRING",
           "value": "kheper"
         },
         {
           "type": "STRING",
+          "value": "kher"
+        },
+        {
+          "type": "STRING",
+          "value": "kher_ankh"
+        },
+        {
+          "type": "STRING",
           "value": "kherp"
+        },
+        {
+          "type": "STRING",
+          "value": "mer"
         },
         {
           "type": "STRING",
@@ -150,11 +183,7 @@
         },
         {
           "type": "STRING",
-          "value": "her"
-        },
-        {
-          "type": "STRING",
-          "value": "mer"
+          "value": "out"
         },
         {
           "type": "STRING",
@@ -170,47 +199,11 @@
         },
         {
           "type": "STRING",
-          "value": "out"
-        },
-        {
-          "type": "STRING",
-          "value": "sema"
-        },
-        {
-          "type": "STRING",
-          "value": "wdj"
-        },
-        {
-          "type": "STRING",
-          "value": "sokh"
+          "value": "rdtsc"
         },
         {
           "type": "STRING",
           "value": "ret"
-        },
-        {
-          "type": "STRING",
-          "value": "duat"
-        },
-        {
-          "type": "STRING",
-          "value": "in"
-        },
-        {
-          "type": "STRING",
-          "value": "isfet"
-        },
-        {
-          "type": "STRING",
-          "value": "maat"
-        },
-        {
-          "type": "STRING",
-          "value": "wab"
-        },
-        {
-          "type": "STRING",
-          "value": "rdtsc"
         },
         {
           "type": "STRING",
@@ -231,6 +224,18 @@
         {
           "type": "STRING",
           "value": "smen"
+        },
+        {
+          "type": "STRING",
+          "value": "sokh"
+        },
+        {
+          "type": "STRING",
+          "value": "wab"
+        },
+        {
+          "type": "STRING",
+          "value": "wdj"
         }
       ]
     },
@@ -278,7 +283,11 @@
       "value": "\\s"
     }
   ],
-  "conflicts": [],
+  "conflicts": [
+    [
+      "verb_statement"
+    ]
+  ],
   "precedences": [],
   "externals": [],
   "inline": [],

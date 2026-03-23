@@ -1,6 +1,8 @@
 module.exports = grammar({
   name: 'maat',
-
+  conflicts: $ => [
+    [$.verb_statement]
+  ],
   rules: {
     // Le point d'entrée : un fichier est une suite d'instructions
     source_file: $ => repeat($._instruction),
@@ -17,21 +19,21 @@ module.exports = grammar({
     // Une étiquette (ex: DEBUT_BOUCLE:)
     label: $ => seq($.identifier, ':'),
 
-    // Une instruction complète (ex: ankh %rcx, 0)
+   // Une instruction complète (maintenant l'opérande est totalement optionnel !)
     verb_statement: $ => seq(
       $.verb,
-      $.operand,
-      optional(seq(',', $.operand))
+      optional(
+        seq($.operand, optional(seq(',', $.operand)))
+      )
     ),
 
-    // Le dictionnaire des verbes de Thot
+    // Le Grand Dictionnaire de Thot (J'ai ajouté tous tes verbes !)
     verb: $ => choice(
-      'her_ankh', 'kher','kher_ankh','ankh', 'dema', 'dja', 'jena',
-      'kheb', 'henek', 'henet', 'kheper', 'kherp', 'nama', 'neheh',
-      'her', 'mer', 'per', 'pop', 'push', 'out', 'sema', 'wdj', 'sokh',
-      'ret', 'duat', 'in', 'isfet', 'maat', 'wab','rdtsc', 'sedjem', 'sema',
-      'sena','shesa','smen'
-     ),
+      'ankh', 'dema', 'dja', 'duat', 'henek', 'henet', 'her', 'her_ankh', 
+      'in', 'isfet', 'jena', 'kheb', 'kheper', 'kher', 'kher_ankh', 'kherp', 
+      'mer', 'nama', 'neheh', 'out', 'per', 'pop', 'push', 'rdtsc', 'ret', 
+      'sedjem', 'sema', 'sena', 'shesa', 'smen', 'sokh', 'wab', 'wdj'
+    ),
 
     // Un opérande peut être un registre, un nombre, du texte, ou un nom (étiquette)
     operand: $ => choice(
