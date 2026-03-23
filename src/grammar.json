@@ -231,6 +231,10 @@
         {
           "type": "STRING",
           "value": "smen"
+        },
+        {
+          "type": "STRING",
+          "value": "kherp"
         }
       ]
     },

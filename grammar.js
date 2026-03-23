@@ -30,7 +30,7 @@ module.exports = grammar({
       'kheb', 'henek', 'henet', 'kheper', 'kherp', 'nama', 'neheh',
       'her', 'mer', 'per', 'pop', 'push', 'out', 'sema', 'wdj', 'sokh',
       'ret', 'duat', 'in', 'isfet', 'maat', 'wab','rdtsc', 'sedjem', 'sema',
-      'sena','shesa','smen'
+      'sena','shesa','smen', 'kherp'
     ),
 
     // Un opérande peut être un registre, un nombre, du texte, ou un nom (étiquette)
