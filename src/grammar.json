@@ -94,7 +94,35 @@
       "members": [
         {
           "type": "STRING",
+          "value": "her_ankh"
+        },
+        {
+          "type": "STRING",
+          "value": "kher"
+        },
+        {
+          "type": "STRING",
+          "value": "kher_ankh"
+        },
+        {
+          "type": "STRING",
           "value": "ankh"
+        },
+        {
+          "type": "STRING",
+          "value": "dema"
+        },
+        {
+          "type": "STRING",
+          "value": "dja"
+        },
+        {
+          "type": "STRING",
+          "value": "jena"
+        },
+        {
+          "type": "STRING",
+          "value": "kheb"
         },
         {
           "type": "STRING",
@@ -102,7 +130,47 @@
         },
         {
           "type": "STRING",
+          "value": "henet"
+        },
+        {
+          "type": "STRING",
+          "value": "kheper"
+        },
+        {
+          "type": "STRING",
+          "value": "kherp"
+        },
+        {
+          "type": "STRING",
+          "value": "nama"
+        },
+        {
+          "type": "STRING",
+          "value": "neheh"
+        },
+        {
+          "type": "STRING",
+          "value": "her"
+        },
+        {
+          "type": "STRING",
+          "value": "mer"
+        },
+        {
+          "type": "STRING",
           "value": "per"
+        },
+        {
+          "type": "STRING",
+          "value": "pop"
+        },
+        {
+          "type": "STRING",
+          "value": "push"
+        },
+        {
+          "type": "STRING",
+          "value": "out"
         },
         {
           "type": "STRING",
@@ -118,11 +186,15 @@
         },
         {
           "type": "STRING",
-          "value": "returne"
+          "value": "ret"
         },
         {
           "type": "STRING",
           "value": "duat"
+        },
+        {
+          "type": "STRING",
+          "value": "in"
         },
         {
           "type": "STRING",
@@ -131,6 +203,34 @@
         {
           "type": "STRING",
           "value": "maat"
+        },
+        {
+          "type": "STRING",
+          "value": "wab"
+        },
+        {
+          "type": "STRING",
+          "value": "rdtsc"
+        },
+        {
+          "type": "STRING",
+          "value": "sedjem"
+        },
+        {
+          "type": "STRING",
+          "value": "sema"
+        },
+        {
+          "type": "STRING",
+          "value": "sena"
+        },
+        {
+          "type": "STRING",
+          "value": "shesa"
+        },
+        {
+          "type": "STRING",
+          "value": "smen"
         }
       ]
     },

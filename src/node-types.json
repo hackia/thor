@@ -106,6 +106,14 @@
     "named": true
   },
   {
+    "type": "dema",
+    "named": false
+  },
+  {
+    "type": "dja",
+    "named": false
+  },
+  {
     "type": "duat",
     "named": false
   },
@@ -114,11 +122,51 @@
     "named": false
   },
   {
+    "type": "henet",
+    "named": false
+  },
+  {
+    "type": "her",
+    "named": false
+  },
+  {
+    "type": "her_ankh",
+    "named": false
+  },
+  {
     "type": "identifier",
     "named": true
   },
   {
+    "type": "in",
+    "named": false
+  },
+  {
     "type": "isfet",
+    "named": false
+  },
+  {
+    "type": "jena",
+    "named": false
+  },
+  {
+    "type": "kheb",
+    "named": false
+  },
+  {
+    "type": "kheper",
+    "named": false
+  },
+  {
+    "type": "kher",
+    "named": false
+  },
+  {
+    "type": "kher_ankh",
+    "named": false
+  },
+  {
+    "type": "kherp",
     "named": false
   },
   {
@@ -126,11 +174,39 @@
     "named": false
   },
   {
+    "type": "mer",
+    "named": false
+  },
+  {
+    "type": "nama",
+    "named": false
+  },
+  {
+    "type": "neheh",
+    "named": false
+  },
+  {
     "type": "number",
     "named": true
   },
   {
+    "type": "out",
+    "named": false
+  },
+  {
     "type": "per",
+    "named": false
+  },
+  {
+    "type": "pop",
+    "named": false
+  },
+  {
+    "type": "push",
+    "named": false
+  },
+  {
+    "type": "rdtsc",
     "named": false
   },
   {
@@ -138,11 +214,27 @@
     "named": true
   },
   {
-    "type": "returne",
+    "type": "ret",
+    "named": false
+  },
+  {
+    "type": "sedjem",
     "named": false
   },
   {
     "type": "sema",
+    "named": false
+  },
+  {
+    "type": "sena",
+    "named": false
+  },
+  {
+    "type": "shesa",
+    "named": false
+  },
+  {
+    "type": "smen",
     "named": false
   },
   {
@@ -152,6 +244,10 @@
   {
     "type": "string",
     "named": true
+  },
+  {
+    "type": "wab",
+    "named": false
   },
   {
     "type": "wdj",

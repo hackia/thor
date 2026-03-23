@@ -26,7 +26,11 @@ module.exports = grammar({
 
     // Le dictionnaire des verbes de Thot
     verb: $ => choice(
-      'ankh', 'henek', 'per', 'sema', 'wdj', 'sokh', 'returne', 'duat', 'isfet', 'maat'
+      'her_ankh', 'kher','kher_ankh','ankh', 'dema', 'dja', 'jena',
+      'kheb', 'henek', 'henet', 'kheper', 'kherp', 'nama', 'neheh',
+      'her', 'mer', 'per', 'pop', 'push', 'out', 'sema', 'wdj', 'sokh',
+      'ret', 'duat', 'in', 'isfet', 'maat', 'wab','rdtsc', 'sedjem', 'sema',
+      'sena','shesa','smen'
     ),
 
     // Un opérande peut être un registre, un nombre, du texte, ou un nom (étiquette)
