@@ -1,0 +1,42 @@
+{
+  "$schema": "https://tree-sitter.github.io/tree-sitter/assets/schemas/config.schema.json",
+  "grammars": [
+    {
+      "name": "maat",
+      "camelcase": "Maat",
+      "title": "Maat",
+      "scope": "source.maat",
+      "file-types": [
+        "maat"
+      ],
+      "injection-regex": "^maat$",
+      "class-name": "TreeSitterMaat"
+    }
+  ],
+  "metadata": {
+    "version": "0.1.0",
+    "license": "MIT",
+    "description": "A asm language",
+    "authors": [
+      {
+        "name": "Saigo Ekitae",
+        "email": "saigoekitae@gmail.com",
+        "url": "https://github.com/hackia"
+      }
+    ],
+    "links": {
+      "repository": "https://github.com/hackia/thor",
+      "funding": ""
+    }
+  },
+  "bindings": {
+    "c": true,
+    "go": true,
+    "java": false,
+    "node": true,
+    "python": true,
+    "rust": true,
+    "swift": true,
+    "zig": false
+  }
+}
